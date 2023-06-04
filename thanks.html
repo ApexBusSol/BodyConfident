@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Confident Aesthetics</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Components/header.css" />
+    <link rel="stylesheet" href="Components/thanks.css" />
+    <link rel="stylesheet" href="Components/footer.css" />
+    <link rel="stylesheet" href="Components/mobile.css" />
+    <link rel="stylesheet" href="utility.css" />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/87acf10589.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Mogra&family=Suez+One&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header container">
+      <!-- mobile navigation -->
+      <div class="mobileNav">
+        <nav>
+          <ul class="mobileNav__menu">
+            <li class="mobileNav__link">
+              <i class="headeri fa-solid fa-house"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="mobileNav__link">
+              <i class="headeri fa-solid fa-syringe"></i>
+              <a href="treatments.html">Treatments</a>
+            </li>
+            <li class="mobileNav__link">
+              <i class="headeri fa-solid fa-graduation-cap"></i>
+              <a href="training.html">Training</a>
+            </li>
+            <li class="mobileNav__link">
+              <i class="headeri fa-solid fa-envelope"></i>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end of mobile navigation -->
+      <div class="header__logo">
+        <a href="index.html"
+          ><h2>Body Confident<br />Aesthetics Academy</h2></a
+        >
+      </div>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__link">
+            <i class="headeri fa-solid fa-house"></i
+            ><a href="index.html">Home</a>
+          </li>
+          <li class="header__link">
+            <i class="headeri fa-solid fa-syringe"></i
+            ><a href="treatments.html">Treatments</a>
+          </li>
+          <li class="header__link">
+            <i class="headeri fa-solid fa-graduation-cap"></i
+            ><a href="training.html">Training</a>
+          </li>
+          <li class="header__link">
+            <i class="headeri fa-solid fa-envelope"></i
+            ><a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <button class="header__bars"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+
+    <main class="thanks container">
+      <h1>Thanks For Contacting Us!</h1>
+      <p>
+        Your message has been submitted and we will get back to you as soon as
+        we are able to.
+      </p>
+      <p>
+        <a href="index.html"
+          ><strong>Click Here to Return to the Main Site</strong></a
+        >
+      </p>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__socials">
+        <a
+          href="https://www.facebook.com/Bodyconfidentaesthetics/"
+          target="_blank"
+          ><i class="footer__img fa-brands fa-square-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/bodyconfidentaesthetics/"
+          target="_blank"
+          ><i class="footer__img fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="contact.html"
+          ><i class="footer__img fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright Body Confident Aesthetics 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- Mobile Navigation -->
+<script>
+  const mobileNavMenu = () => {
+    const headerBtn = document.querySelector(".header__bars");
+    const mobileNavMenu = document.querySelector(".mobileNav");
+
+    let isMobileNavOpen = false;
+
+    headerBtn.addEventListener("click", () => {
+      isMobileNavOpen = !isMobileNavOpen;
+      if (isMobileNavOpen) {
+        mobileNavMenu.style.display = "flex";
+        document.body.style.overflowY = "hidden";
+      } else {
+        mobileNavMenu.style.display = "none";
+        document.body.style.overflowY = "auto";
+      }
+    });
+  };
+
+  mobileNavMenu();
+</script>

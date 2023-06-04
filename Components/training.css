@@ -1,0 +1,149 @@
+.training {
+  margin: 1rem;
+  text-decoration: none;
+  list-style: none;
+  font-size: var(--size-xs);
+}
+
+.training__header {
+  font-size: var(--size-base);
+  text-align: center;
+}
+
+.training__priceList {
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.training__priceList > p {
+  text-align: center;
+  font-weight: 600;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--clr-greyfont);
+}
+
+.price {
+  text-align: right;
+}
+
+td {
+  border-bottom: 0.5px solid rgb(231, 231, 231);
+}
+
+.training__packages {
+  text-align: center;
+  margin: 1rem;
+}
+
+.training__section > h3 {
+  background-image: linear-gradient(to right, #AD2590, #D642B6, #159BFF, #0070C0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--size-sm);
+}
+
+.training__section {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 2px dotted rosybrown;
+}
+
+.training__price {
+  font-size: var(--size-base);
+  font-weight: bold;
+}
+
+.training__links {
+  margin: 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+.training__block1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.training__img {
+  font-size: var(--size-3xl);
+  padding: 1rem 0 0.5rem;
+}
+
+.training__logo {
+  display: inline;
+  width: 120px;
+  aspect-ratio: 3/1;
+  margin: auto;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.training__linkbtn {
+  font-size: var(--size-sm);
+  width: 250px;
+  display: block;
+}
+
+
+/*xs*/
+/* @media (min-width: 475px) {
+
+} */
+
+/*sm*/
+/* @media (min-width: 640px) {
+
+} */
+
+/*md*/
+@media (min-width: 768px) {  
+  .training {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .download__btn {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 25%;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .training__priceList {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .training__grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+/*lg*/
+@media (min-width: 1024px) {
+  .training {
+    font-size: var(--size-sm);
+  }
+
+  .training__priceList > p {
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+/*xl*/
+/* @media (min-width: 1280px) {
+
+} */
+
+/*2xl*/
+/* @media (min-width: 1536px) {
+
+} */

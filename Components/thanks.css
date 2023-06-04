@@ -1,0 +1,18 @@
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.thanks > h1 {
+  font-size: var(--size-5xl);
+  font-weight: bold;
+  margin: 2rem 1rem;
+}
+
+.thanks > p {
+  margin: 2rem;
+  font-size: var(--size-base);
+}

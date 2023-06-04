@@ -1,0 +1,117 @@
+.links {
+  text-align: center;
+  margin: 1rem;
+}
+
+.link__section {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.link__img {
+  font-size: var(--size-3xl);
+}
+
+.link__section > p {
+  font-size: var(--size-xs);
+  padding: 0.5rem;
+  max-width: 40ch;
+  margin: auto;
+}
+
+.link__btn {
+  font-size: var(--size-sm);
+  width: 250px;
+  margin: auto;
+}
+
+.link__subtext {
+  font-size: var(--size-xxs);
+}
+
+/*xs*/
+/* @media (min-width: 475px) {
+
+} */
+
+/*sm*/
+/* @media (min-width: 640px) {
+
+} */
+
+/*md*/
+@media (min-width: 768px) {
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .link__section > p {
+    max-width: 35ch;
+  }
+}
+
+/*lg*/
+/* @media (min-width: 1024px) {
+
+} */
+
+/*xl*/
+@media (min-width: 1280px) {
+  .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px;
+  }
+  
+  .link__section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .link__section > p {
+    padding: 1em 0;
+  }
+
+  .link__treatments {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .link__prizedraw {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .link__courses {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .link__videos {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  
+  .link__img {
+    font-size: var(--size-4xl);
+  }
+  
+  .link__section > p {
+    font-size: var(--size-sm);
+  }
+  
+  .link__btn {
+    font-size: var(--size-base);
+  }
+  
+  .link__subtext {
+    font-size: var(--size-xs);
+  }
+}
+
+/*2xl*/
+/* @media (min-width: 1536px) {
+
+} */

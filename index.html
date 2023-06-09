@@ -373,48 +373,50 @@
         <p>Copyright Body Confident Aesthetics 2023</p>
       </div>
     </footer>
+    
+    <!-- Results Photo Carousel -->
+<script>
+      var myIndex1 = 0;
+      carousel1();
+
+      function carousel1() {
+        var i;
+        var x = document.getElementsByClassName("hero__results");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex1++;
+        if (myIndex1 >= x.length) {
+          myIndex1 = 0;
+        }
+        x[myIndex1].style.display = "block";
+        setTimeout(carousel1, 3000);
+      }
+    </script>
+
+    <!-- Testimonial Carousel -->
+    <script>
+      var myIndex2 = 0;
+      carousel2();
+
+      function carousel2() {
+        var i;
+        var x = document.getElementsByClassName("testimonial");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex2++;
+        if (myIndex2 >= x.length) {
+          myIndex2 = 0;
+        }
+        x[myIndex2].style.display = "block";
+        setTimeout(carousel2, 7000);
+      }
+    </script>
+
   </body>
 </html>
 
-<!-- Results Photo Carousel -->
-<script>
-  var myIndex1 = 0;
-  carousel1();
-
-  function carousel1() {
-    var i;
-    var x = document.getElementsByClassName("hero__results");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex1++;
-    if (myIndex1 >= x.length) {
-      myIndex1 = 0;
-    }
-    x[myIndex1].style.display = "block";
-    setTimeout(carousel, 3000);
-  }
-</script>
-
-<!-- Testimonial Carousel -->
-<script>
-  var myIndex2 = 0;
-  carousel2();
-
-  function carousel2() {
-    var i;
-    var x = document.getElementsByClassName("testimonial");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex2++;
-    if (myIndex2 >= x.length) {
-      myIndex2 = 0;
-    }
-    x[myIndex2].style.display = "block";
-    setTimeout(carousel, 7000);
-  }
-</script>
 
 <!-- Mobile Navigation -->
 <script>

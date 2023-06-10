@@ -59,6 +59,7 @@ td {
   margin: 1rem;
   padding: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .training__block1 {

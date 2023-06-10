@@ -34,6 +34,7 @@ h5 {
 .formbox {
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .formbox .row50 {
@@ -99,7 +100,7 @@ h5 {
 .contact__info i {
   min-width: 16px;
   min-height: 16px;
-  margin-right: 1rem;
+  margin-right: 2rem;
   padding: 0;
 }
 
@@ -113,14 +114,12 @@ h5 {
 .contact__info .socials {
   display: flex;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   font-size: var(--size-3xl);
 }
 
 .contact__map iframe {
-  width: 99%;
+  width: 100%;
   height: 100%;
   min-height: 300px;
   display: flex;
